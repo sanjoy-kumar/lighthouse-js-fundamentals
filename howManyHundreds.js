@@ -1,10 +1,12 @@
-function ageCalculator(name,yearOfBirth,currentYear){
-  let age = 0;
-  age = currentYear - yearOfBirth;
-  return name + " is " + age + " years old.";
+function howManyHundreds(numberOfBottles){
+  if(numberOfBottles >= 0){
+    return parseInt(numberOfBottles / 100);
+  }
 }
 
 
-console.log(ageCalculator("Miranda", 1983, 2015));
-console.log(ageCalculator("Ferdinand", 1988, 2015));
-
+console.log(howManyHundreds(1000), "=?", 10);
+console.log(howManyHundreds(894), "=?", 8);
+console.log(howManyHundreds(520), "=?", 5);
+console.log(howManyHundreds(99), "=?", 0);
+console.log(howManyHundreds(0), "=?", 0);
